@@ -2,8 +2,8 @@
 A1=www.reddit.com
 A2=https://classroom.google.com/u/1/a/not-turned-in/all
 A3=https://calendar.google.com/calendar/u/0/r
-A4= 
-A5= 
+A4=E:\
+A5=E:\Anime\Series\Blue Excorsist
 A6= 
 A7= 
 A8= 

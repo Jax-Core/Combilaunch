@@ -2,8 +2,8 @@
 N1=Reddit
 N2=Classroom
 N3=Calendar
-N4= 
-N5= 
+N4=E Drive
+N5=Blue Excorsist
 N6= 
 N7= 
 N8= 
