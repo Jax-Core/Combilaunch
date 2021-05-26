@@ -2,8 +2,9 @@
 Measure=Plugin
 Plugin=FileView
 Path=""
+Substitute="":"ROOT"
 Count=6
-IfMatch=^$
+IfMatch="ROOT"
 IfMatchAction=[!SetVariable mPathBool 0]
 IfNotMatchAction=[!SetVariable mPathBool 1]
 
@@ -48,7 +49,7 @@ Path=[mPath]
 Type=Icon
 IconSize=#IconSize#
 Index=1
-IconPath=#@#Images\fileview1.ico
+IconPath=#@#Icons\icon1.ico
 Group=Children
 
 ;----------------------------------------------------
@@ -69,7 +70,7 @@ Path=[mPath]
 Type=Icon
 IconSize=#IconSize#
 Index=2
-IconPath=#@#Images\fileview2.ico
+IconPath=#@#Icons\icon2.ico
 Group=Children
 
 ;----------------------------------------------------
@@ -90,7 +91,7 @@ Path=[mPath]
 Type=Icon
 IconSize=#IconSize#
 Index=3
-IconPath=#@#Images\fileview3.ico
+IconPath=#@#Icons\icon3.ico
 Group=Children
 
 ;----------------------------------------------------
@@ -111,7 +112,7 @@ Path=[mPath]
 Type=Icon
 IconSize=#IconSize#
 Index=4
-IconPath=#@#Images\fileview4.ico
+IconPath=#@#Icons\icon4.ico
 Group=Children
 
 ;----------------------------------------------------
@@ -132,7 +133,7 @@ Path=[mPath]
 Type=Icon
 IconSize=#IconSize#
 Index=5
-IconPath=#@#Images\fileview5.ico
+IconPath=#@#Icons\icon5.ico
 Group=Children
 
 [mIndex6Name]
@@ -150,5 +151,5 @@ Path=[mPath]
 Type=Icon
 IconSize=#IconSize#
 Index=6
-IconPath=#@#Images\fileview6.ico
+IconPath=#@#Icons\icon6.ico
 Group=Children

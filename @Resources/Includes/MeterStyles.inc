@@ -60,5 +60,5 @@ H=35
 DynamicVariables=1
 MouseOverAction=[!SetOption #CURRENTSECTION# SolidColor "0,255,0,240"][!UpdateMeter #CURRENTSECTION#][!Redraw]
 MouseLeaveAction=[!SetOption #CURRENTSECTION# SolidColor "0,255,0,190"][!UpdateMeter #CURRENTSECTION#][!Redraw]
-LeftMouseUpAction=[!WriteKeyValue Variables "Name#Index#" [m[#CURRENTSECTION]Name] #@#Variables\Names.inc][!WriteKeyValue Variables "MatchAction#Index#" """["[mPath][m[#CURRENTSECTION]Name]"]""" #@#Variables\MatchActions.inc][!Refresh "Combilaunch\@Settings" "Actions.ini"][!DeactivateConfig]
+LeftMouseUpAction=[!WriteKeyValue Name "IfMatchAction#Index#" """["[m[#CURRENTSECTION]Name]"]""" #@#Checks.inc][!WriteKeyValue Launch "IfMatchAction#Index#" """["[mPath][m[#CURRENTSECTION]Name]"]""" #@#Checks.inc][!ActivateConfig "Combilaunch\Main"][!DeactivateConfig "Combilaunch\Main"][!Refresh "Combilaunch\@Settings" "Actions.ini"][!DeactivateConfig]
 Container=TextMask

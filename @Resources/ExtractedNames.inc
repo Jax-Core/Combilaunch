@@ -1,0 +1,27 @@
+[Variables]
+N1=Reddit
+N2=Classroom
+N3=Calendar
+N4=E Drive
+N5=Blue Excorsist
+N6= 
+N7= 
+N8= 
+N9= 
+N10= 
+N11= 
+N12= 
+N13= 
+N14= 
+N15= 
+N16= 
+N17= 
+N18= 
+N19= 
+N20= 
+N21= 
+N22= 
+N23= 
+N24= 
+N25= 
+N26= 
