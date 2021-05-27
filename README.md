@@ -8,7 +8,7 @@
 
 A *Rainmeter* minimalistic launcher. Download rainmeter [here](https://www.rainmeter.net/)
 
-- Quickly open 25 different apps or webpages using custom combinations
+- Quickly open different apps or webpages using custom combinations
 - Change colors, scale, spacing and shapes. Fully customizable and rescalable
 - Quick and simple setup, no text editing required. Simply drag, drop and draw the pattern you desire
 
