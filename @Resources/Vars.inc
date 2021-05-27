@@ -1,19 +1,19 @@
 [Variables]
 Padding=30
+Style=Clear
+ColorStyle=#Style#
+ColorStyleBool=1
 
-Size=1.00
+MouseTraceBool=1
+; 1 = on, 0 = off
+ConfirmBool=0
+PulseBool=0
+
+Size=1.56
 Gap=1.00
 DotBox=50
 
-DotColor=255,255,255
-DotColorBackup=255,255,255
-DotColorOpacity=155
+@includeColor=Colors\#ColorStyle#.inc
 
-DotBorderColor=255,255,255
-DotBorderOpacity=50
-
-LineColor=255,255,255
-LineOpacity=255
-
-BackgroundColor=255,255,255
-BackgroundOpacity=0
+ConfirmAction=
+PulseAction=

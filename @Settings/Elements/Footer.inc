@@ -1,3 +1,6 @@
+[Variables]
+@includeCommonVars=#@#Vars.inc
+
 [SlideBackground]
 Meter=Shape
 DynamicVariables=1
