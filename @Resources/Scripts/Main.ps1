@@ -76,7 +76,7 @@ function CreateFields {
 Meter=String
 MeterStyle=RegularText | N
 Text=#Name$i#
-LeftMouseUpAction=[!SetVariable Index $i][!CommandMeasure Input "ExecuteBatch 2"]
+LeftMouseUpAction=[!SetVariable Index $i][!CommandMeasure Input "ExecuteBatch 1"]
 
 "@
         $combinationContents+=@"
@@ -94,7 +94,8 @@ LeftMouseUpAction=[!SetVariable Index $i][!WriteKeyValue Variables Index $i "Set
 Meter=String
 MeterStyle=RegularText | A
 Text=#MatchAction$i#
-LeftMouseUpAction=[!SetVariable Index $i][!CommandMeasure Input2 "ExecuteBatch 2"]
+LeftMouseUpAction=[!SetVariable Index $i][!CommandMeasure Input2 "ExecuteBatch 1"]
+RightMouseUpAction=[!ToggleMeasure ExtendScroll][!ToggleMouseActionGroup "LeftMouseUpAction" ActionTab][!UpdateMeasureGroup Mouse][!UpdateMeterGroup ExtendedMenu][!SetVariable Index $i][!ToggleMeterGroup ExtendedMenu]
 
 "@
         $fileContents+=@"
@@ -159,21 +160,21 @@ function CraftVariables {
     
 [Variables]
 "@
-    $previuosNamesHash=@('', '')
-    $previuosPatternsHash=@('', '')
-    $previuosMatchActionsHash=@('', '')
+    $previuosNamesHash=@('')
+    $previuosPatternsHash=@('')
+    $previuosMatchActionsHash=@('')
 
     $RmAPI.Log('Getting old variables...')
     switch ($process) {
         add {
-            for ($i=2; $i -lt $addCount; $i++) {
+            for ($i=1; $i -lt $addCount; $i++) {
                 $previuosNamesHash+=$RmAPI.VariableStr("Name$i")
                 $previuosPatternsHash+=$RmAPI.VariableStr("Pattern$i")
                 $previuosMatchActionsHash+=$RmAPI.VariableStr("MatchAction$i")
             }
         }
         remove {
-            for ($i=2; $i -lt $addCount+2; $i++) {
+            for ($i=1; $i -lt $addCount+2; $i++) {
                 if ($i -ne $deleteIndex) {
                     $previuosNamesHash+=$RmAPI.VariableStr("Name$i")
                     $previuosPatternsHash+=$RmAPI.VariableStr("Pattern$i")
@@ -184,7 +185,7 @@ function CraftVariables {
             }    
         }
         drop {
-            for ($i=2; $i -lt $addCount; $i++) {
+            for ($i=1; $i -lt $addCount; $i++) {
                 $previuosNamesHash+=if($RmAPI.VariableStr("Name$i")){$RmAPI.VariableStr("Name$i")}else{''}
                 $previuosPatternsHash+=if($RmAPI.VariableStr("Pattern$i")){$RmAPI.VariableStr("Pattern$i")}else{''}
                 $previuosMatchActionsHash+=if($RmAPI.VariableStr("MatchAction$i")){$RmAPI.VariableStr("MatchAction$i")}else{''}
@@ -196,7 +197,7 @@ function CraftVariables {
 
     $RmAPI.Log('Creating new variables...')
 
-    for ($i=2; $i -lt $addCount+1; $i++) {
+    for ($i=1; $i -lt $addCount+1; $i++) {
 
         $nameVariables+=@"
 
@@ -216,7 +217,11 @@ MatchAction$i=$(if($previuosMatchActionsHash[$i]){$previuosMatchActionsHash[$i]}
     $nameVariables | Out-File -FilePath $($RmAPI.VariableStr('@') + 'Variables\Names.inc') -Encoding utf8
     $patternVariables | Out-File -FilePath $($RmAPI.VariableStr('@') + 'Variables\Patterns.inc') -Encoding utf8
     $matchActionVariables | Out-File -FilePath $($RmAPI.VariableStr('@') + 'Variables\MatchActions.inc') -Encoding utf8
-    
+    switch ($process) {
+        {$_ -in "add","drop"} {
+            $RmAPI.Bang("!WriteKeyValue Variables ScrollAutoBool `"0`"")
+        }
+    }
 }
 function AddPattern {
     $currentIndex=$RmAPI.Variable('Index')
@@ -225,7 +230,7 @@ function AddPattern {
 
     $inducedPattern=$RmAPI.Variable('InducedPattern')
 
-    $patternArray=@("$($RmAPI.Variable('Pattern'))")
+    $patternArray=@("$($RmAPI.Variable('Pattern1'))")
 
     for ($i=2; $i -lt $indexCount+1; $i++) {
         if($i -ne $currentIndex) {
@@ -239,8 +244,8 @@ function AddPattern {
         $RmAPI.Bang("!WriteKeyValue Variables Pattern$currentIndex `"$inducedPattern`" `"$($RmAPI.VariableStr('@')+'Variables\Patterns.inc')`"")
         $RmAPI.Bang('!ActivateConfig "Combilaunch\@Settings" "Actions.ini"')
     }else{
-        $RmAPI.Bang('[!SetOption S Text "Pattern exists!"][!UpdateMeter S][!Redraw]')
-        Start-Sleep -Milliseconds 300
+        $RmAPI.Bang('[!SetOption S Text "Pattern exists!"][!SetOption S FontColor FF0000][!UpdateMeter S][!Redraw]')
+        Start-Sleep -Milliseconds 500
         $RmAPI.Bang('!Refresh')
     }
 }
