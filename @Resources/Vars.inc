@@ -1,8 +1,8 @@
 [Variables]
 Padding=30
 Style=Oblique
-ColorStyle=Custom
-ColorStyleBool=0
+ColorStyle=Clear
+ColorStyleBool=1
 
 MouseTraceBool=1
 ; 1 = on, 0 = off
