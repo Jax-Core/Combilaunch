@@ -6,6 +6,9 @@ DynamicVariables=1
 Shape=Rectangle (-95*#Gap#),(-95*#Gap#),(95*2*#Gap#),(95*2*#Gap#),5,5 | StrokeWidth 0 | Rotate 45 | Fill Color #BackgroundColor#,(Clamp(#BackgroundOpacity#,1,255))
 MouseLeaveAction=
 
+@includeCheckUpdates=#@#Check4Updates.inc
+
+
 [C]
 Shape=Rectangle (-#Size#*10),(-#Size#*10),(#Size#*10*2),(#Size#*10*2) | StrokeWidth 10 | Fill Color #DotColor#,#DotColorOpacity# | StrokeColor #DotBorderColor#,#DotBorderOpacity# | Rotate 45 | Extend Pulse
 Pulse=Scale 1,1
@@ -27,8 +30,8 @@ Meter=Shape
 X=r
 Y=r
 DynamicVariables=1
-Shape=Path This | StrokeWidth (5) | Stroke Color #ShadowColor#,#ShadowColorOpacity# | Fill Color 0,0,0,1 | StrokeStartCap Round | StrokeEndCap Round | Offset (2-100),2
-Shape2=Path This | StrokeWidth (5) | Stroke Color #LineColor#,#LineOpacity# | Fill Color 0,0,0,1 | StrokeStartCap Round | StrokeEndCap Round | Offset -100,0
+Shape=Path This | StrokeWidth (5) | Stroke Color #ShadowColor#,#ShadowColorOpacity# | Fill Color 0,0,0,1 | StrokeStartCap Round | StrokeEndCap Round | Offset (2-100*#Gap#),2
+Shape2=Path This | StrokeWidth (5) | Stroke Color #LineColor#,#LineOpacity# | Fill Color 0,0,0,1 | StrokeStartCap Round | StrokeEndCap Round | Offset (-100*#Gap#),0
 This=#CURRENTLINE#
 [2]
 Meter=Shape

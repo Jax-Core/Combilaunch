@@ -1,15 +1,15 @@
 [Variables]
 Padding=30
-Style=Clear
-ColorStyle=#Style#
-ColorStyleBool=1
+Style=Oblique
+ColorStyle=Custom
+ColorStyleBool=0
 
 MouseTraceBool=1
 ; 1 = on, 0 = off
 ConfirmBool=0
 PulseBool=0
 
-Size=1.56
+Size=1.00
 Gap=1.00
 DotBox=50
 

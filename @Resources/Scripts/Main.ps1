@@ -122,7 +122,7 @@ IfMatchAction$i=[!SetOption S Text "#Name$i#"]
         $checkLaunchContents+=@"
 
 IfMatch$i=^#Pattern$i#$
-IfMatchAction$i=#MatchAction$i#
+IfMatchAction$i=#MatchAction$i##ConfirmAction#
 "@
     }
 

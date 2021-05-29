@@ -1,16 +1,16 @@
 [Variables]
-DotColor=255,255,255
-DotColorBackup=255,255,255
+DotColor=236,239,244
+DotColorBackup=236,239,244
 DotColorOpacity=155
 
-DotBorderColor=255,255,255
+DotBorderColor=236,239,244
 DotBorderOpacity=50
 
 LineColor=255,255,255
 LineOpacity=255
 
-BackgroundColor=0,0,0
-BackgroundOpacity=0
+BackgroundColor=76,86,106
+BackgroundOpacity=255
 
 ShadowColor=0,0,0
 ShadowColorOpacity=150

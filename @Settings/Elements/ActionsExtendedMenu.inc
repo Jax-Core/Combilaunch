@@ -26,18 +26,6 @@ Container=ExtendedMenuContainer
 Group=ExtendedMenu
 Hidden=1
 
-[Highlight]
-Meter=Image
-H=0
-W=190
-X=5
-Y=
-SolidColor=190,190,190,170
-DynamicVariables=1
-Container=ExtendedMenuContainer
-Hidden=1
-Group=ExtendedMenu
-
 [PowerOptionsHeader]
 Meter=String
 Container=ExtendedMenuContainer
@@ -65,14 +53,16 @@ Hidden=1
 [ShutDown]
 Meter=String
 Text=Shutdown
-X=10
+X=0
 Y=19R
 H=30
-W=190
+W=200
+Padding=10,0,0,0
+SolidColor=0,0,0,1
 MeterStyle=SemiBoldedText
 Container=ExtendedMenuContainer
-MouseOverAction=[!SetOption Highlight Y ([[#CURRENTSECTION]:Y]-[ExtendedMenuContainer:Y])][!SetOption Highlight H 30][!UpdateMeter Highlight][!Redraw]
-MouseLeaveAction=[!SetOption Highlight H 0][!UpdateMeter Highlight][!Redraw]
+MouseOverAction=[!SetOption #CURRENTSECTION# SolidColor "190,190,190,170"][!UpdateMeter #CURRENTSECTION#][!Redraw]
+MouseLeaveAction=[!SetOption #CURRENTSECTION# SolidColor "0,0,0,1"][!UpdateMeter #CURRENTSECTION#][!Redraw]
 Group=ExtendedMenu
 LeftMouseUpAction=[!SetVariable ShutBool (1-[#ShutBool])][!UpdateMeter ShutArrow][!Redraw][!ToggleMeterGroup ShutMenu][!UpdateMeasure ExtendScroll]
 Hidden=1
@@ -151,7 +141,7 @@ MeterStyle=SemiBoldedText | ShutDown
 [ExtraHeader]
 Meter=String
 Text=Extra
-Y=10R
+Y=R
 MeterStyle=SemiBoldedText | PowerOptionsHeader
 
 [Separator2]
@@ -163,7 +153,21 @@ Meter=String
 Text=UWP Folder
 Y=19R
 MeterStyle=SemiBoldedText | ShutDown
-LeftMouseUpAction=["shell:AppsFolder"]
+LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """["shell:AppsFolder"]""" #@#Variables\MatchActions.inc][!WriteKeyValue Variables Name[#Index] "UWP Folder" #@#Variables\Names.inc][!Refresh]
+
+[WindowsSettings]
+Meter=String
+Text=Win Settings
+Y=R
+MeterStyle=SemiBoldedText | ShutDown
+LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """["ms-settings::"]""" #@#Variables\MatchActions.inc][!WriteKeyValue Variables Name[#Index] "Win Settings" #@#Variables\Names.inc][!Refresh]
+
+[WifiSettings]
+Meter=String
+Text=Wifi
+Y=R
+MeterStyle=SemiBoldedText | ShutDown
+LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """["ms-availablenetworks:"]""" #@#Variables\MatchActions.inc][!WriteKeyValue Variables Name[#Index] "Win Settings" #@#Variables\Names.inc][!Refresh]
 [LastItem]
 Meter=String
 H=0
@@ -175,4 +179,4 @@ Container=ExtendedMenuContainer
 Measure=Calc
 Formula=([ExtendedMenuContainer:H]-([LastItem:Y]-[ExtendedMenuContainer:Y])+9)
 DynamicVariables=1
-Disabled=1
+UpdateDivider=-1
