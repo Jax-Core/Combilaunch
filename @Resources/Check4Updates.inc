@@ -15,7 +15,7 @@ String=[Version]
 DynamicVariables=1
 Disabled=1
 IfMatchMode=1
-IfMatch=v1\.0
+IfMatch=v1\.1
 IfNotMatchAction=[!DisableMouseAction * *][!SetVariable DotColorOpacity "5"][!SetVariable DotBorderOpacity "5"][!SetVariable BackgroundColor 0,0,0][!SetVariable BackgroundOpacity 150][!UpdateMeter *][!ShowMeter UAlert][!EnableMouseAction UAlert *][!UpdateMeter *][!Redraw]
 
 [UAlert]

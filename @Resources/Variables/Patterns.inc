@@ -1,3 +1,3 @@
 ﻿    
 [Variables]
-Pattern1=412
+Pattern1=14569
