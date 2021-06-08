@@ -93,7 +93,7 @@ FontFace=Segoe UI
 FontWeight=400
 Group=ShutMenu
 Hidden=1
-LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """["[#*SlidetoShutdown*]"]""" #@#Variables\MatchActions.inc][!WriteKeyValue Variables Name[#Index] "SlideToShutdown" #@#Variables\Names.inc][!Refresh]
+LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """["[#*SlidetoShutdown*]"]""" "#@#Variables\MatchActions.inc"][!WriteKeyValue Variables Name[#Index] "SlideToShutdown" #@#Variables\Names.inc][!Refresh]
 MeterStyle=SemiBoldedText | ShutDown
 
 [ShutDownCustom]
@@ -106,7 +106,7 @@ FontFace=Segoe UI
 FontWeight=400
 Group=ShutMenu
 Hidden=1
-LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """[[#Shutdown]]""" #@#Variables\MatchActions.inc][!WriteKeyValue Variables Name[#Index] "Shutdown in [#ShutdownDelay]s" #@#Variables\Names.inc][!Refresh]
+LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """[[#Shutdown]]""" "#@#Variables\MatchActions.inc"][!WriteKeyValue Variables Name[#Index] "Shutdown in [#ShutdownDelay]s" #@#Variables\Names.inc][!Refresh]
 MeterStyle=SemiBoldedText | ShutDown
 
 
@@ -114,28 +114,28 @@ MeterStyle=SemiBoldedText | ShutDown
 Meter=String
 Text=Restart
 Y=R
-LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """[[#Restart]]""" #@#Variables\MatchActions.inc][!WriteKeyValue Variables Name[#Index] "Restart in [#RestartDelay]s" #@#Variables\Names.inc][!Refresh]
+LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """[[#Restart]]""" "#@#Variables\MatchActions.inc"][!WriteKeyValue Variables Name[#Index] "Restart in [#RestartDelay]s" #@#Variables\Names.inc][!Refresh]
 MeterStyle=SemiBoldedText | ShutDown
 
 [Sleep]
 Meter=String
 Text=Sleep
 Y=R
-LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """[[#Sleep]]""" #@#Variables\MatchActions.inc][!WriteKeyValue Variables Name[#Index] "Sleep" #@#Variables\Names.inc][!Refresh]
+LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """[[#Sleep]]""" "#@#Variables\MatchActions.inc"][!WriteKeyValue Variables Name[#Index] "Sleep" #@#Variables\Names.inc][!Refresh]
 MeterStyle=SemiBoldedText | ShutDown
 
 [Lock]
 Meter=String
 Text=Lock
 Y=R
-LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """[[#Lock]]""" #@#Variables\MatchActions.inc][!WriteKeyValue Variables Name[#Index] "Lock" #@#Variables\Names.inc][!Refresh]
+LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """[[#Lock]]""" "#@#Variables\MatchActions.inc"][!WriteKeyValue Variables Name[#Index] "Lock" #@#Variables\Names.inc][!Refresh]
 MeterStyle=SemiBoldedText | ShutDown
 
 [SignOut]
 Meter=String
 Text=SignOut
 Y=R
-LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """[[#SignOut]]""" #@#Variables\MatchActions.inc][!WriteKeyValue Variables Name[#Index] "Sign out" #@#Variables\Names.inc][!Refresh]
+LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """[[#SignOut]]""" "#@#Variables\MatchActions.inc"][!WriteKeyValue Variables Name[#Index] "Sign out" #@#Variables\Names.inc][!Refresh]
 MeterStyle=SemiBoldedText | ShutDown
 
 [ExtraHeader]
@@ -153,21 +153,21 @@ Meter=String
 Text=UWP Folder
 Y=19R
 MeterStyle=SemiBoldedText | ShutDown
-LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """["shell:AppsFolder"]""" #@#Variables\MatchActions.inc][!WriteKeyValue Variables Name[#Index] "UWP Folder" #@#Variables\Names.inc][!Refresh]
+LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """["shell:AppsFolder"]""" "#@#Variables\MatchActions.inc"][!WriteKeyValue Variables Name[#Index] "UWP Folder" #@#Variables\Names.inc][!Refresh]
 
 [WindowsSettings]
 Meter=String
 Text=Win Settings
 Y=R
 MeterStyle=SemiBoldedText | ShutDown
-LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """["ms-settings::"]""" #@#Variables\MatchActions.inc][!WriteKeyValue Variables Name[#Index] "Win Settings" #@#Variables\Names.inc][!Refresh]
+LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """["ms-settings::"]""" "#@#Variables\MatchActions.inc"][!WriteKeyValue Variables Name[#Index] "Win Settings" #@#Variables\Names.inc][!Refresh]
 
 [WifiSettings]
 Meter=String
 Text=Wifi
 Y=R
 MeterStyle=SemiBoldedText | ShutDown
-LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """["ms-availablenetworks:"]""" #@#Variables\MatchActions.inc][!WriteKeyValue Variables Name[#Index] "Win Settings" #@#Variables\Names.inc][!Refresh]
+LeftMouseUpAction=[!WriteKeyValue Variables MatchAction[#Index] """["ms-availablenetworks:"]""" "#@#Variables\MatchActions.inc"][!WriteKeyValue Variables Name[#Index] "Win Settings" #@#Variables\Names.inc][!Refresh]
 [LastItem]
 Meter=String
 H=0
