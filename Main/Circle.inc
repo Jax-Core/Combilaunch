@@ -5,7 +5,6 @@ Y=(#padding#)
 Shape=Ellipse (100*#Gap#),(100*#Gap#),(100*#Gap#+#padding#/1.5),(100*#Gap#+#padding#/1.5) | StrokeWidth 0 | Fill Color #BackgroundColor#,(Clamp(#BackgroundOpacity#,1,255))
 MouseLeaveAction=
 
-@includeCheckUpdates=#@#Check4Updates.inc
 
 [C]
 Shape=Ellipse 0,0,(#Size#*10),(#Size#*10) | StrokeWidth 10 | Fill Color #DotColor#,#DotColorOpacity# | StrokeColor #DotBorderColor#,#DotBorderOpacity# | Extend Pulse
