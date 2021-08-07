@@ -103,7 +103,7 @@ RightMouseUpAction=[!ToggleMeasure ExtendScroll][!ToggleMouseActionGroup "LeftMo
 [F$i]
 Meter=String
 MeterStyle=IconText | F
-LeftMouseUpAction=[!SetVariable Index $i][!WriteKeyValue Variables Index $i "#ROOTCONFIGPATH#FileManager\File Folder.ini"][!ActivateConfig "Combilaunch\FileManager"]        
+LeftMouseUpAction=[!SetVariable Index $i][!UpdateMeasure MeasureChoose][!CommandMeasure MeasureChoose "ChooseFile 1"]
 
 "@
         $deleteContents+=@"

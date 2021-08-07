@@ -17,3 +17,7 @@ DotBox=50
 
 ConfirmAction=
 PulseAction=
+Scale=1
+P=40
+R=10
+GlobalP=10

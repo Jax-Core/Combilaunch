@@ -2,7 +2,7 @@
 Meter=Shape
 Shape=Rectangle 0,0,((#Padding#+10)*2+100*2*#Gap#),((#Padding#+10)*2+100*2*#Gap#) | StrokeWidth 0 | Fill Color #BackgroundColor#,(Clamp(#BackgroundOpacity#,1,255))
 MouseLeaveAction=
-@includeCheckUpdates=#@#Check4Updates.inc
+
 
 [C]
 Shape=Ellipse 0,0,(#Size#*10),(#Size#*10) | StrokeWidth 10 | Fill Color #DotColor#,#DotColorOpacity# | StrokeColor #DotBorderColor#,#DotBorderOpacity# | Extend Pulse

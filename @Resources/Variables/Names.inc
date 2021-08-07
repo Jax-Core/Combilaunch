@@ -1,3 +1,3 @@
 ﻿    
 [Variables]
-Name1=Combilaunch help
+Name1=rikka
