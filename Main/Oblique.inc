@@ -6,6 +6,7 @@ DynamicVariables=1
 Shape=Rectangle (-95*#Gap#),(-95*#Gap#),(95*2*#Gap#),(95*2*#Gap#),5,5 | StrokeWidth 0 | Rotate 45 | Fill Color #BackgroundColor#,(Clamp(#BackgroundOpacity#,1,255))
 MouseLeaveAction=
 
+@includeCheckUpdates=#@#Check4Updates.inc
 
 
 [C]
