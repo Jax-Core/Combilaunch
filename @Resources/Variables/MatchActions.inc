@@ -1,3 +1,3 @@
 ﻿    
 [Variables]
-MatchAction1=["C:\Users\enhan\Downloads\rikka.gif"]
+MatchAction1=["https://www.deviantart.com/jaxoriginals"]

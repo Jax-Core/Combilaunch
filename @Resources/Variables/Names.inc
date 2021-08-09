@@ -1,3 +1,3 @@
 ﻿    
 [Variables]
-Name1=rikka
+Name1=JaxOriginals
