@@ -2,7 +2,7 @@
   Combilaunch
 </h1>
 
-<img src="https://github.com/EnhancedJax/Combilaunch/blob/test/%40Resources/Image/Splash.png"/>
+<img src="https://github.com/EnhancedJax/Combilaunch/blob/main/%40Resources/Image/Preview.png"/>
 
 <h4 align="center">Download Now!</h4>
 
