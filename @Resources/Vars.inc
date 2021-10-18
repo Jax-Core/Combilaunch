@@ -1,23 +1,24 @@
 [Variables]
-Padding=30
-Style=Oblique
-ColorStyle=Clear
-ColorStyleBool=1
-
-MouseTraceBool=1
-; 1 = on, 0 = off
-ConfirmBool=0
-PulseBool=0
-
-Size=1.00
-Gap=1.00
+Scale=1
+P=30
+Size=1
+Gap=1
 DotBox=50
 
-@includeColor=Colors\#ColorStyle#.inc
+Style=Oblique
 
-ConfirmAction=
-PulseAction=
-Scale=1
-P=40
-R=10
-GlobalP=10
+MouseTraceBool=0
+ConfirmBool=1
+PulseBool=0
+ShowBackground=0
+
+DotColor=255,255,255
+DotColorBackup=255,255,255
+DotBorderColor=255,255,255
+LineColor=255,255,255
+ShadowColor=0,0,0
+
+
+; P=40
+; R=10
+; GlobalP=10
