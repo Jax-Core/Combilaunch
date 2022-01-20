@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Jax-Core/Combilaunch">
-    <img src="https://imgur.com/nz0RDpu" alt="Logo" width="200" height="200">
+    <img src="https://imgur.com/nz0RDpu.png" alt="Logo" width="200" height="200">
   </a>
 
 <h3 align="center">Combilaunch</h3>
