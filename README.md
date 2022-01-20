@@ -76,7 +76,7 @@ Now that you've installed Combilaunch, let's configure it!
 
 1. Click on the **System Tray** in the bottom right corner of your taskbar. 
   * **Note:** The System Tray is indicated by the small upward pointing arrow. For reference, see the image below.
-    <img src ="https://imgur.com/rJQqvKt", alt = "ref", width="80", height ="80">
+    <img src ="https://imgur.com/6sIUlga.png", alt = "ref", width="80", height ="80">
 2. Right click on the Rainmeter icon and select **Manage**.
 3. Expand the **Combilaunch** folder from the left-pane when the manage window opens.
 4. Within that folder, expand **@Settings** and then select `Main.ini`.
