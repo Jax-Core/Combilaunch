@@ -85,7 +85,7 @@ Now that you've installed Combilaunch, let's configure it!
 4. Within that folder, expand **@Settings** and then select `Main.ini`.
 5. Now, on the right, press **Load** to load the ini file. This will open the Combilaunch configuration menu, where you can customize the pattern locks.
 6. Select **Actions** from the hamburger menu.
-7. Click the **'+'** icon to create a new lock for a specific application.
+7. Click the **`+`** icon to create a new lock for a specific application.
 8. Enter a name for the action, draw a pattern for the lock, and then select the application (shortcut is recommended) to which the lock is being added.
 9. Refresh Rainmeter, and your app-lock should now function properly.
 
