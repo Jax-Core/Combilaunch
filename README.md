@@ -89,7 +89,7 @@ Now that you've installed Combilaunch, let's configure it!
 8. Enter a name for the action, draw a pattern for the lock, and then select the application (shortcut is recommended) to which the lock is being added.
 9. Refresh Rainmeter, and your app-lock should now function properly.
 
-**Further customization can be done through the **Appearance** tab.**
+- **Note:** Further customization can be done through the **Appearance** tab.
 
 ## Help and Credits
 - [FileChoose](https://forum.rainmeter.net/memberlist.php?mode=viewprofile&u=43205) plugin by Setsukka.
