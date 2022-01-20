@@ -8,7 +8,7 @@
 <h3 align="center">Combilaunch</h3>
 
   <p align="center">
-    Rainmeter powered combination launcher.
+    Applock for Windows powered by Rainmeter.
     <br />
     <a href="https://www.deviantart.com/jaxoriginals/art/Combilaunch-v1-3-881177085"><strong>More Info »</strong></a>
     <br />
